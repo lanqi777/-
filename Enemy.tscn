@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://w2vie8ilgh77"]
+
+[ext_resource type="Script" uid="uid://bc2ic66oybnij" path="res://Enemy.gd" id="1_enemyscript"]
+[ext_resource type="Texture2D" uid="uid://b0tot8oorm5fi" path="res://assets/enemy.png" id="2_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7bn3"]
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource("1_enemyscript")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("2_texture")
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+offset_top = -30.0
+offset_right = 40.0
+offset_bottom = -25.0
+value = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s7bn3")

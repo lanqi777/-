@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dysrt13b6r17t"]
+
+[ext_resource type="Script" uid="uid://cn5a3umf8ctk3" path="res://Bullet/SummonUnit.gd" id="1_summon"]
+
+[node name="SummonUnit" type="Area2D"]
+script = ExtResource("1_summon")

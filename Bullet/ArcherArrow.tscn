@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://we2a3fnginse"]
+
+[ext_resource type="Script" uid="uid://gwn4asrkphq2" path="res://Bullet/ArcherArrow.gd" id="1_arrow"]
+[ext_resource type="Texture2D" uid="uid://b0tot8oorm5fi" path="res://assets/enemy.png" id="2_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttsab"]
+
+[node name="ArcherArrow" type="Area2D"]
+script = ExtResource("1_arrow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_texture")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ttsab")

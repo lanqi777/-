@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjl0fr3f0hu8"]
+
+[ext_resource type="Script" uid="uid://bs5ab8r7wqkvh" path="res://Bullet/SlashEffect.gd" id="1_slash"]
+
+[node name="SlashEffect" type="Node2D"]
+script = ExtResource("1_slash")

@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://tko31efemr55"]
+
+[ext_resource type="Script" uid="uid://c1auwtndnbn2i" path="res://Main.gd" id="1_glv2v"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_glv2v")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="resources_label" type="Label" parent="UI"]
+offset_right = 115.0
+offset_bottom = 50.0
+
+[node name="damage_label" type="Label" parent="UI"]
+offset_left = 1.0
+offset_top = 54.0
+offset_right = 115.0
+offset_bottom = 100.0
+
+[node name="stats_label" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="experience_label" type="Label" parent="UI"]
+offset_left = 1.0
+offset_top = 174.0
+offset_right = 115.0
+offset_bottom = 200.0
+
+[node name="class_label" type="Label" parent="UI"]
+offset_left = 1.0
+offset_top = 214.0
+offset_right = 115.0
+offset_bottom = 240.0
